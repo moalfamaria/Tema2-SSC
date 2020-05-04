@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+	<head>
+
+		<meta charset = "UTF-8">
+		<title>Baterie Muzicala</title>
+		<link rel = "stylesheet" href = "style.css">
+		<link href = "https://fonts.googleapis.com/css?family=Just+Another+Hand" rel = "stylesheet">
+
+		<script src = "script.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id = "header">
+			<span>BATERIE MUZICALA</span>
+		</div>
+
+		<div id = "main">
+			<div id = "nav">
+				<form>
+					<span>Alege Dificultatea:</span>
+					<select id = "difficulty">
+						<option value = "easy">Usor</option>
+						<option value = "medium" selected>Mediu</option>
+						<option value = "hard">Greu</option>
+					</select><br><br>
+					<span class = "info">Apasa butonul START cand doresti sa incepi exercitiul</span><br>
+					<span class = "info">Bateria va canta o piesa. Incearca sa o reproduci. Nu apasa pe instrumente in timp ce piesa este cantata.</span><br>
+					<button type = "button" class = "start" onclick = "start(3);">Start</button><br>
+					<span id = "timer">Asteptare...</span><br>
+					<button type = "button" id = "check" class = "finish" onclick = "checkScore();">Verifica</button>
+					<span id = "points">Punctaj: </span>
+					<span id = "rate">Rata de succes: </span>
+					<span id = "unnecessary">Apasari inutile: </span>
+					<span id = "overtime"></span>
+					<button type = "button" id = "refresh" class = "retry" onClick = "history.go(0);">Mai incearca</button>
+				</form>
+			</div>
+
+			<div id = "countdown">
+				<span id = "seconds">Timp Ramas: </span>
+			</div>
+
+			<div id = "drums">
+				<img id = "bass" src = "tobe/bass.png" onclick = "playDrum('bass');">
+				<img id = "hihat" src = "tobe/hihat.png" onclick = "playDrum('hihat');">
+				<img id = "hightom" src = "tobe/hightom.png" width = "175" height = "181" onclick = "playDrum('hightom');">
+				<img id = "tom" src = "tobe/tom.png" width = "300" height = "410" onclick = "playDrum('tom');">
+				<img id = "snare" src = "tobe/snare.png" onclick = "playDrum('snare');">
+				<img id = "crash" src = "tobe/crash.png" width = "225" height = "647" onclick = "playDrum('crash');">
+				<img id = "ride" src = "tobe/ride.png" width = "225" height = "647" onclick = "playDrum('ride');">
+			</div>
+		</div>
+
+	</body>
+
+</html>

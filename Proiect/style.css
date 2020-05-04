@@ -1,0 +1,221 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+  	margin: 0;
+  	overflow: hidden;
+  	font-family: 'Just Another Hand', cursive;
+}
+
+div#header {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	text-align: center;
+	color: white;
+	font-size: 46px;
+	cursor: default;
+}
+
+div#main {
+	display: flex;
+	flex: 1;
+}
+
+div#nav {
+	position: relative;
+	padding: 50px;
+	width: 15%;
+	background-color: gold;
+}
+
+div#nav span {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+select {
+	font-size: 19px;
+	float: right;
+	border: 0px;
+	background-color: gold;
+	color: royalblue;
+	font-weight: bold;
+}
+
+select:focus {
+	outline: none;
+}
+
+form span {
+	cursor: default;
+}
+
+option[value = "easy"] {
+	color: green;
+}
+
+option[value = "medium"] {
+	color: yellow;
+}
+
+option[value = "hard"] {
+	color: red;
+}
+
+button.start {
+	display: block;
+	width: 100%;
+	background-color: yellowgreen;
+	text-align: center;
+	height: 40px;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 30px;
+	color: seagreen;
+}
+
+span.info {
+	display: block;
+	cursor: default;
+}
+
+span#timer {
+	display: block;
+	text-align: center;
+}
+
+button.finish {
+	display: none;
+	width: 100%;
+	background-color: royalblue;
+	text-align: center;
+	height: 40px;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	color: skyblue;
+}
+
+span#points {
+	display: none;
+}
+
+span#unnecessary {
+	display: none;
+}
+
+span#rate {
+	display: none;
+}
+
+span#overtime {
+	display: block;
+}
+
+button#refresh {
+	position: absolute;
+	bottom: 50px;
+	display: none;
+	width: 74%;
+	background-color: red;
+	text-align: center;
+	height: 40px;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 30px;
+	color: darkred;
+}
+
+div#countdown {
+	position: absolute;
+	top: 10.4%;
+	left: 23%;
+}
+
+span#seconds {
+	display: none;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+img {
+	cursor: pointer;
+}
+
+img:active {
+	-webkit-filter: drop-shadow(4px 4px 0 red)
+                    drop-shadow(-4px -4px 0 red);
+  	filter: drop-shadow(4px 4px 0 red) 
+          	drop-shadow(-4px -4px 0 red);
+}
+
+img.playing {
+	-webkit-filter: drop-shadow(4px 4px 0 red)
+                    drop-shadow(-4px -4px 0 red);
+  	filter: drop-shadow(4px 4px 0 red) 
+          	drop-shadow(-4px -4px 0 red);
+}
+
+div#drums {
+	width: 80%;
+	background-color: khaki;
+}
+
+img#bass {
+	position: relative;
+	top: 23%;
+	left: 35%;
+	z-index: 2;
+}
+
+img#hightom {
+	position: relative;
+	top: -20%;
+	left: -1%;
+	z-index: 4;
+}
+
+img#hihat {
+	position: relative;
+	top: 18%;
+	left: -5%;
+	z-index: 4;
+}
+
+img#tom {
+	position: relative;
+	top: 18%;
+	left: 3%;
+	z-index: 1;
+}
+
+img#snare {
+	position: relative;
+	top: 23%;
+	left: -45%;
+	z-index: 4;
+}
+
+img#crash {
+	display: none;
+	position: relative;
+	top: -35%;
+	left: 30%;
+	z-index: 3;
+}
+
+img#ride {
+	display: none;
+	position: relative;
+	top: -40%;
+	left: 33%;
+	z-index: 0;
+}
