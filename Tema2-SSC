@@ -1,0 +1,19 @@
+/**
+  *
+  * main() will be run when you invoke this action
+  *
+  * @param Cloud Functions actions accept a single parameter, which must be a JSON object.
+  *
+  * @return The output of this action, which must be a JSON object.
+  *
+  */
+  var counter =0;
+function main(msg) {
+    var date= new Date();
+    var time=date.getHours()+":"+date.getMinutes();
+    counter++;
+	//return { message: 'Buna, ' + msg.name +' '+ msg.surname +'    '+ 'grupa:' + msg.grupa };
+	return { message: 'It is ' + time +', the action has been called '+ counter +' time(s)' };
+}
+
+
